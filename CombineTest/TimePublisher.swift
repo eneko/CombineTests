@@ -18,6 +18,8 @@ struct TimeInfo: Codable {
 }
 
 struct TimePublisher {
+    static let shared = TimePublisher()
+
     let url = URL(string: "https://worldtimeapi.org/api/ip")!
     var publisher: AnyPublisher<TimeInfo, Error> {
         URLSession.shared

@@ -14,18 +14,23 @@ import Combine
 struct ContentView : View {
     @State var circuits: [Circuit] = []
     @State var time: String = ""
+
     var body: some View {
         VStack {
             Text("Circuits: \(circuits.count)")
             Text("The time is:\n\(time)").lineLimit(2)
 
             Button(action: {
-                _ = CircuitPublisher().publisher.sink { (circuits) in
+                _ = CircuitPublisher.shared.publisher.sink { completion in
+                    dump(completion)
+                } receiveValue: { circuits in
                     self.circuits = circuits
                 }
-                _ = TimePublisher().publisher.sink { (time) in
+                _ = TimePublisher.shared.publisher.sink(receiveCompletion: { (completion) in
+                    dump(completion)
+                }, receiveValue: { (time) in
                     self.time = time.datetime
-                }
+                })
             }, label: { Text("Get Time") })
             .padding()
         }

@@ -18,6 +18,8 @@ enum RequestError: Error {
 }
 
 struct CircuitPublisher {
+    static let shared = CircuitPublisher()
+
     let url = URL(string: "https://www.grandprixstats.org/api/v1/f1/circuits/all.json")!
     var publisher: AnyPublisher<[Circuit], Error> {
         URLSession.shared

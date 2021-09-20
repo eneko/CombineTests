@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		956FCC4E22D117DE004CD47F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956FCC4D22D117DE004CD47F /* AppDelegate.swift */; };
 		956FCC5022D117DE004CD47F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956FCC4F22D117DE004CD47F /* SceneDelegate.swift */; };
-		956FCC5222D117DE004CD47F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956FCC5122D117DE004CD47F /* ContentView.swift */; };
 		956FCC5422D117E0004CD47F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 956FCC5322D117E0004CD47F /* Assets.xcassets */; };
 		956FCC5722D117E0004CD47F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 956FCC5622D117E0004CD47F /* Preview Assets.xcassets */; };
 		956FCC5A22D117E0004CD47F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 956FCC5822D117E0004CD47F /* LaunchScreen.storyboard */; };
 		956FCC6522D117E0004CD47F /* CombineTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956FCC6422D117E0004CD47F /* CombineTestTests.swift */; };
 		956FCC7022D117FC004CD47F /* CircuitPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956FCC6F22D117FC004CD47F /* CircuitPublisher.swift */; };
 		95E1EE5822D3E1770017275C /* TimePublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E1EE5722D3E1770017275C /* TimePublisher.swift */; };
+		9C442A3C25B4AA3800D548F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956FCC5122D117DE004CD47F /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -158,7 +158,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = "Eneko Alonso";
 				TargetAttributes = {
 					956FCC4922D117DE004CD47F = {
@@ -215,9 +215,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				956FCC4E22D117DE004CD47F /* AppDelegate.swift in Sources */,
+				9C442A3C25B4AA3800D548F8 /* ContentView.swift in Sources */,
 				956FCC5022D117DE004CD47F /* SceneDelegate.swift in Sources */,
 				95E1EE5822D3E1770017275C /* TimePublisher.swift in Sources */,
-				956FCC5222D117DE004CD47F /* ContentView.swift in Sources */,
 				956FCC7022D117FC004CD47F /* CircuitPublisher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +278,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -338,6 +339,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
